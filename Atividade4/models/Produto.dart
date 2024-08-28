@@ -15,7 +15,7 @@ class Produto {
 
   // Set para todos
   void setAtributos(String nome, double valor, int codigo) {
-    if (nome != true && valor > 0 && codigo > 0) {
+    if (nome.isNotEmpty && valor > 0 && codigo > 0) {
       this._nome = nome;
       this._valor = valor;
       this._codigo = codigo;
